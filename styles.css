@@ -490,27 +490,36 @@ footer {
     transform: scale(1.05);
 }
 
-.skills ul {
+.skills {
+    margin-top: 2rem;
+}
+
+.skills-section {
+    margin-bottom: 2rem;
+}
+
+.skills-section h3 {
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    text-align: left;
+}
+
+.skills-section ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
-    margin-top: 1rem;
     list-style: none;
 }
 
-.skills li {
-    background: var(--primary-color);
-    box-shadow: var(--neu-shadow);
-    padding: 0.8rem;
-    border-radius: 5px;
-    text-align: center;
-    transition: all 0.3s;
+.skills-section:last-child {
+    margin-bottom: 0;
 }
 
-.skills li:hover {
-    background: var(--button-color);
-    color: var(--white);
-    transform: translateY(-2px);
+@media (max-width: 768px) {
+    .skills-section ul {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Update the contact section padding for better map display */
