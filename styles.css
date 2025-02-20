@@ -299,7 +299,7 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(243, 240, 255, 0.9);
+    background: rgba(243, 240, 255, 0.95);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -314,8 +314,13 @@ footer {
 }
 
 .portfolio-overlay h3 {
-    text-shadow: 1px 1px 1px var(--shadow-light),
-                -1px -1px 1px var(--shadow-dark);
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.portfolio-overlay p {
+    margin-bottom: 1rem;
+    color: var(--text-color);
 }
 
 /* Contact */
@@ -542,4 +547,97 @@ footer {
     color: var(--accent-color);
     font-weight: bold;
     margin-right: 0.5rem;
+}
+
+/* Add these styles for the slideshow and GitHub button */
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    object-fit: cover;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.slide-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 1rem;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 2;
+    transition: background 0.3s;
+}
+
+.slide-btn:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Update GitHub button styles */
+.github-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #2196F3;  /* Match your blue button color */
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.github-btn i {
+    font-size: 1.2rem;
+}
+
+.github-btn:hover {
+    background: #1976D2;  /* Darker blue on hover */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Update portfolio overlay to better display the GitHub button */
+.portfolio-overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem;
+    background: rgba(243, 240, 255, 0.95);  /* Make background more opaque */
+}
+
+.portfolio-overlay h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.portfolio-overlay p {
+    margin-bottom: 1rem;
+    color: var(--text-color);
 } 

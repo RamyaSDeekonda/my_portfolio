@@ -72,4 +72,30 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('section').forEach(section => {
         observer.observe(section);
     });
+
+    // Add this function to handle the slideshow
+    function changeSlide(direction, projectIndex) {
+        const project = document.querySelectorAll('.portfolio-item')[projectIndex];
+        const slides = project.querySelectorAll('.slide');
+        let activeSlide = project.querySelector('.slide.active');
+        let currentIndex = Array.from(slides).indexOf(activeSlide);
+        
+        // Remove current active class
+        activeSlide.classList.remove('active');
+        
+        // Calculate new index
+        currentIndex += direction;
+        if (currentIndex >= slides.length) currentIndex = 0;
+        if (currentIndex < 0) currentIndex = slides.length - 1;
+        
+        // Add active class to new slide
+        slides[currentIndex].classList.add('active');
+    }
+
+    // Auto slideshow
+    setInterval(() => {
+        document.querySelectorAll('.portfolio-item').forEach((item, index) => {
+            changeSlide(1, index);
+        });
+    }, 5000); // Change slide every 5 seconds
 }); 

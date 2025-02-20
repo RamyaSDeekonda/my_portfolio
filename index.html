@@ -90,24 +90,53 @@
             <h2>Recent Work</h2>
             <div class="portfolio-grid">
                 <div class="portfolio-item" style="--order: 1;">
-                    <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Portfolio 1">
+                    <div class="slideshow-container">
+                        <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg" class="slide active" alt="Portfolio 1">
+                        <img src="https://images.pexels.com/photos/39284/macbook-apple-imac-computer-39284.jpeg" class="slide" alt="Portfolio 1">
+                        <img src="https://images.pexels.com/photos/1029757/pexels-photo-1029757.jpeg" class="slide" alt="Portfolio 1">
+                        <button class="slide-btn prev" onclick="changeSlide(-1, 0)">❮</button>
+                        <button class="slide-btn next" onclick="changeSlide(1, 0)">❯</button>
+                    </div>
                     <div class="portfolio-overlay">
                         <h3>E-commerce Website</h3>
                         <p>Web Design / Development</p>
+                        <a href="https://github.com/yourusername/project1" class="github-btn" target="_blank">
+                            <i class="fab fa-github"></i> View on GitHub
+                        </a>
                     </div>
                 </div>
+
                 <div class="portfolio-item" style="--order: 2;">
-                    <img src="https://images.pexels.com/photos/326503/pexels-photo-326503.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Portfolio 2">
+                    <div class="slideshow-container">
+                        <img src="https://images.pexels.com/photos/326503/pexels-photo-326503.jpeg" class="slide active" alt="Portfolio 2">
+                        <img src="https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg" class="slide" alt="Portfolio 2">
+                        <img src="https://images.pexels.com/photos/860538/pexels-photo-860538.jpeg" class="slide" alt="Portfolio 2">
+                        <button class="slide-btn prev" onclick="changeSlide(-1, 1)">❮</button>
+                        <button class="slide-btn next" onclick="changeSlide(1, 1)">❯</button>
+                    </div>
                     <div class="portfolio-overlay">
                         <h3>Restaurant Website</h3>
                         <p>UI/UX Design</p>
+                        <a href="https://github.com/yourusername/project2" class="github-btn" target="_blank">
+                            <i class="fab fa-github"></i> View on GitHub
+                        </a>
                     </div>
                 </div>
+
                 <div class="portfolio-item" style="--order: 3;">
-                    <img src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Portfolio 3">
+                    <div class="slideshow-container">
+                        <img src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg" class="slide active" alt="Portfolio 3">
+                        <img src="https://images.pexels.com/photos/1420709/pexels-photo-1420709.jpeg" class="slide" alt="Portfolio 3">
+                        <img src="https://images.pexels.com/photos/1420701/pexels-photo-1420701.jpeg" class="slide" alt="Portfolio 3">
+                        <button class="slide-btn prev" onclick="changeSlide(-1, 2)">❮</button>
+                        <button class="slide-btn next" onclick="changeSlide(1, 2)">❯</button>
+                    </div>
                     <div class="portfolio-overlay">
                         <h3>Mobile App Design</h3>
                         <p>UI Design / Prototyping</p>
+                        <a href="https://github.com/yourusername/project3" class="github-btn" target="_blank">
+                            <i class="fab fa-github"></i> View on GitHub
+                        </a>
                     </div>
                 </div>
             </div>
