@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramya | Web Designer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Ramya</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="menuToggle" class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero" style="background: url('https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') center/cover;">
+            <div class="hero-content">
+                <h1>Hello, I'm Ramya</h1>
+                <h2>Web Designer</h2>
+                <p>Creating beautiful and functional digital experiences</p>
+                <a href="#contact" class="cta-button">Let's Work Together</a>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://images.pexels.com/photos/3861959/pexels-photo-3861959.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Professional workspace">
+                </div>
+                <div class="about-text">
+                    <p>As a passionate web designer with over 5 years of experience, I specialize in creating beautiful, functional, and user-centered digital experiences. My approach combines creativity with technical expertise to deliver websites that not only look stunning but also perform exceptionally.</p>
+                    <p>I collaborate with clients worldwide, bringing their digital visions to life through innovative design solutions and attention to detail.</p>
+                    <div class="skills">
+                        <h3>My Expertise</h3>
+                        <ul>
+                            <li>UI/UX Design</li>
+                            <li>Responsive Design</li>
+                            <li>HTML/CSS/JS</li>
+                            <li>WordPress</li>
+                            <li>Adobe Creative Suite</li>
+                            <li>Figma/Sketch</li>
+                            <li>Web Animation</li>
+                            <li>SEO Optimization</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <h2>Services</h2>
+            <div class="services-grid">
+                <div class="service-card" style="--order: 1;">
+                    <i class="fas fa-desktop"></i>
+                    <h3>Web Design</h3>
+                    <p>Custom website designs that capture your brand's essence and deliver exceptional user experiences.</p>
+                    <ul class="service-features">
+                        <li>Custom Design</li>
+                        <li>User Research</li>
+                        <li>Wireframing</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Responsive Design</h3>
+                    <p>Websites that work flawlessly on all devices</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>UI/UX Design</h3>
+                    <p>User-centered design solutions that engage and convert</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio">
+            <h2>Recent Work</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" style="--order: 1;">
+                    <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Portfolio 1">
+                    <div class="portfolio-overlay">
+                        <h3>E-commerce Website</h3>
+                        <p>Web Design / Development</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" style="--order: 2;">
+                    <img src="https://images.pexels.com/photos/326503/pexels-photo-326503.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Portfolio 2">
+                    <div class="portfolio-overlay">
+                        <h3>Restaurant Website</h3>
+                        <p>UI/UX Design</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" style="--order: 3;">
+                    <img src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Portfolio 3">
+                    <div class="portfolio-overlay">
+                        <h3>Mobile App Design</h3>
+                        <p>UI Design / Prototyping</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Get in Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p><i class="fas fa-envelope"></i> email@example.com</p>
+                    <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                    <p><i class="fas fa-map-marker-alt"></i> USA</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-behance"></i></a>
+                        <a href="#"><i class="fab fa-dribbble"></i></a>
+                    </div>
+                </div>
+                <form id="contactForm">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Ramya. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
